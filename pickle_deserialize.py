@@ -11,10 +11,10 @@ deserialized = pickle.loads(decoded_data)
 
 try:
     deserialized = pickle.loads(decoded_data)
-    print("Deserialización exitosa:", deserialized)
+    print("Successful deserialisation:", deserialized)
 
 except AttributeError as e:
-    print(f"Error: Falta la clase necesaria para la deserialización: {e}")
+    print(f"Error: The class required for deserialisation is missing: {e}")
 
 except Exception as e:
-    print(f"Error durante la deserialización: {e}")
+    print(f"Error during deserialisation: {e}")
